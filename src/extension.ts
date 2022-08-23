@@ -34,7 +34,7 @@ export function activate (_context: ExtensionContext) {
   analyzeDependencies();
 
  
-  commands.registerCommand("prouserarch.helloWorld", async (uri: Uri) => {
+  commands.registerCommand("prouser.arch", async (uri: Uri) => {
     Go(uri);
   });
 }

@@ -10,7 +10,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:prouserarch.helloWorld",
+    "onCommand:prouser.arch",
     "workspaceContains:**/pubspec.yaml"
   ],
   "main": "./dist/extension.js",
@@ -19,15 +19,15 @@
       "explorer/context": [
         {
           "when": "explorerResourceIsFolder && dart-code:anyFlutterProjectLoaded && dart-code:isRunningLocally",
-          "command": "prouserarch.helloWorld",
-          "group": "prouserarch"
+          "command": "prouser.arch",
+          "group": "prouser"
         }
       ]
     },
     "commands": [
       {
-        "command": "prouserarch.helloWorld",
-        "title": "Hello World"
+        "command": "prouser.arch",
+        "title": "Prouser Apps > Create Architecture"
       }
     ]
   },
