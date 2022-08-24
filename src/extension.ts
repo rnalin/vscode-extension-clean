@@ -397,7 +397,7 @@ export async function generateFeatureArchitecture (
 
   //domain
   //infra
-  await generateRepositoryCode(featureName, infraDirectoryPath);
+  //await generateRepositoryCode(featureName, infraDirectoryPath);
   //locator
   await generateLocatorCode(featureName, locatorDirectoryPath);
   //navigation
@@ -429,12 +429,12 @@ export function getFeaturesDirectoryPath (currentDirectory: string): string {
   // Rebuild path
   const result = splitPath.join(path.sep);
 
-  // Determines whether we're already in the features directory or not
-  const isDirectoryAlreadyFeatures =
+  // Determines whether we're already in the modules directory or not
+  const isDirectoryAlreadyModules =
     splitPath[splitPath.length - 1] === "modules";
 
-  // If already return the current directory if not, return the current directory with the /features append to it
-  return isDirectoryAlreadyFeatures ? result : path.join(result, "modules");
+  // If already return the current directory if not, return the current directory with the /modules append to it
+  return isDirectoryAlreadyModules ? result : path.join(result, "modules");
 }
 
 export async function createDirectories (
